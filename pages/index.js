@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from "../components/Navbar";
 import UserList from "../components/UserList";
+import AddUser from "../components/AddUser";
 
 export default function Home() {
     return (
@@ -10,8 +11,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Navbar/>
-            <UserList />
-
+            <main>
+                <AddUser/>
+                <UserList/>
+            </main>
         </div>
     )
 }

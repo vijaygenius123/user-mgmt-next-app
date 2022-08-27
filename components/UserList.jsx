@@ -41,7 +41,7 @@ const UserList = () => {
                 {!loading && (
                     <tbody className="bg-white">
                     {
-                        users && users.map(user => <UserLine user={user}/>)
+                        users && users.map(user => <UserLine key={user.id} user={user}/>)
                     }
                     </tbody>)
                 }
